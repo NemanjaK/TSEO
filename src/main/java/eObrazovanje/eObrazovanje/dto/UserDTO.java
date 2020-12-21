@@ -1,5 +1,7 @@
 package eObrazovanje.eObrazovanje.dto;
 
+import eObrazovanje.eObrazovanje.entity.Rok;
+import eObrazovanje.eObrazovanje.entity.User;
 import eObrazovanje.eObrazovanje.enumeration.Role;
 
 import javax.persistence.EnumType;
@@ -14,6 +16,10 @@ public class UserDTO {
     private Role role;
 
     public UserDTO() {
+    }
+
+    public UserDTO(User user) {
+        this(user.getId(), user.getUsername(), user.getPassword(), user.getIme(), user.getPrezime(), user.getRole());
     }
 
     public UserDTO(long id, String username, String password, String ime, String prezime, Role role) {

@@ -1,5 +1,7 @@
 package eObrazovanje.eObrazovanje.dto;
 
+import eObrazovanje.eObrazovanje.entity.Rok;
+
 import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
@@ -17,6 +19,10 @@ public class RokDTO implements Serializable {
         this.id = id;
         this.naziv = naziv;
         this.ispiti = ispiti;
+    }
+
+    public RokDTO(Rok rok) {
+        this(rok.getId(), rok.getNaziv(), rok.getIspiti());
     }
 
     public Long getId() {

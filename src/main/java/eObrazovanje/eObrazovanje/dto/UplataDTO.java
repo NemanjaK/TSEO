@@ -1,6 +1,8 @@
 package eObrazovanje.eObrazovanje.dto;
 
+import eObrazovanje.eObrazovanje.entity.Rok;
 import eObrazovanje.eObrazovanje.entity.Student;
+import eObrazovanje.eObrazovanje.entity.Uplata;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -16,6 +18,10 @@ public class UplataDTO implements Serializable {
     private Student student;
 
     public UplataDTO() {
+    }
+
+    public UplataDTO(Uplata uplata) {
+        this(uplata.getId(), uplata.getDatum(), uplata.getIznos(), uplata.getRacunPrimaoca(), uplata.getPozivNaBroj(), uplata.getSvrhaUplate(), uplata.getStudent());
     }
 
     public UplataDTO(Long id, Date datum, Double iznos, String racunPrimaoca, String pozivNaBroj, String svrhaUplate, Student student) {
