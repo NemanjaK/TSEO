@@ -1,9 +1,7 @@
 package eObrazovanje.eObrazovanje.controller;
 
 import eObrazovanje.eObrazovanje.dto.UplataDTO;
-import eObrazovanje.eObrazovanje.dto.UserDTO;
 import eObrazovanje.eObrazovanje.entity.Uplata;
-import eObrazovanje.eObrazovanje.entity.User;
 import eObrazovanje.eObrazovanje.service.UplataService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

@@ -21,6 +21,7 @@ public class RokDTO implements Serializable {
         this.ispiti = ispiti;
     }
 
+    // Konstruktor neophodan za dodavanje objekta
     public RokDTO(Rok rok) {
         this(rok.getId(), rok.getNaziv(), rok.getIspiti());
     }

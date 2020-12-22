@@ -1,6 +1,8 @@
 package eObrazovanje.eObrazovanje.dto;
 
 
+import eObrazovanje.eObrazovanje.entity.Nastavnik;
+import eObrazovanje.eObrazovanje.entity.Rok;
 import eObrazovanje.eObrazovanje.entity.User;
 import eObrazovanje.eObrazovanje.enumeration.UlogaNastavnika;
 
@@ -17,6 +19,11 @@ public class NastavnikDTO {
 	private Set<Predmet> predmeti = new HashSet<>();
 
 	public NastavnikDTO() {
+	}
+
+	// Konstruktor neophodan za dodavanje objekta
+	public NastavnikDTO(Nastavnik nastavnik) {
+		this(nastavnik.getId(), nastavnik.getJmbg(), nastavnik.getAdresa(), nastavnik.getUlogaNastavnika(), nastavnik.getUser(), nastavnik.getPredmeti());
 	}
 
 	public NastavnikDTO(Long id, String jmbg, String adresa, UlogaNastavnika ulogaNastavnika, User user, Set<Predmet> predmeti) {

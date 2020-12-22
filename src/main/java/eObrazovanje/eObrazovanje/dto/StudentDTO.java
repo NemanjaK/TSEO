@@ -1,5 +1,7 @@
 package eObrazovanje.eObrazovanje.dto;
 
+import eObrazovanje.eObrazovanje.entity.Rok;
+import eObrazovanje.eObrazovanje.entity.Student;
 import eObrazovanje.eObrazovanje.entity.User;
 
 public class StudentDTO {
@@ -14,6 +16,11 @@ public class StudentDTO {
     private User user;
 
     public StudentDTO() {
+    }
+
+    // Konstruktor neophodan za dodavanje objekta
+    public StudentDTO(Student student) {
+        this(student.getId(), student.getBrojIndeksa(), student.getTekuciRacun(), student.getStanje(), student.getBrojTelefona(), student.getJmbg(), student.getAdresa(), student.getUser());
     }
 
     public StudentDTO(Long id, String brojIndeksa, String tekuciRacun, double stanje, String brojTelefona, String jmbg, String adresa, User user) {

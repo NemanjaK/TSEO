@@ -1,5 +1,7 @@
 package eObrazovanje.eObrazovanje.dto;
 
+import eObrazovanje.eObrazovanje.entity.Dokument;
+import eObrazovanje.eObrazovanje.entity.Rok;
 import eObrazovanje.eObrazovanje.entity.Student;
 
 import java.io.Serializable;
@@ -15,6 +17,11 @@ public class DokumentDTO implements Serializable {
     private Student student;
 
     public DokumentDTO() {
+    }
+
+    // Konstruktor neophodan za dodavanje objekta
+    public DokumentDTO(Dokument dokument) {
+        this(dokument.getId(), dokument.getDatumDokumenta(), dokument.getNaziv(), dokument.getSadrzaj(), dokument.getPutanja(), dokument.getStudent());
     }
 
     public DokumentDTO(Long id, Date datumDokumenta, String naziv, String sadrzaj, String putanja, Student student) {

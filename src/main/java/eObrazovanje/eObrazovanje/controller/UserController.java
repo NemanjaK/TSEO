@@ -1,8 +1,6 @@
 package eObrazovanje.eObrazovanje.controller;
 
-import eObrazovanje.eObrazovanje.dto.RokDTO;
 import eObrazovanje.eObrazovanje.dto.UserDTO;
-import eObrazovanje.eObrazovanje.entity.Rok;
 import eObrazovanje.eObrazovanje.entity.User;
 import eObrazovanje.eObrazovanje.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;

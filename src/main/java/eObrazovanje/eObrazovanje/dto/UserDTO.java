@@ -18,6 +18,7 @@ public class UserDTO {
     public UserDTO() {
     }
 
+    // Konstruktor neophodan za dodavanje objekta
     public UserDTO(User user) {
         this(user.getId(), user.getUsername(), user.getPassword(), user.getIme(), user.getPrezime(), user.getRole());
     }

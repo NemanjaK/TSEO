@@ -20,6 +20,7 @@ public class UplataDTO implements Serializable {
     public UplataDTO() {
     }
 
+    // Konstruktor neophodan za dodavanje objekta
     public UplataDTO(Uplata uplata) {
         this(uplata.getId(), uplata.getDatum(), uplata.getIznos(), uplata.getRacunPrimaoca(), uplata.getPozivNaBroj(), uplata.getSvrhaUplate(), uplata.getStudent());
     }
